@@ -1,0 +1,1517 @@
+'''tpl=1,2,3,4,5,6,4,3
+print(len(tpl))
+for v in tpl:
+    print(v,end=" ")
+print(tpl.index(4))
+print(tpl.count(4))
+lst=list(tpl)
+print(lst)
+for i in lst:
+    print(i)
+'''
+'''s={}
+print(type(s))
+set={1,2,3,4,1,2,3,4,True,False}
+print(set)
+set.add(9)
+print(set)
+set.update([2,3,4,5,'vamsi'])
+print(set)
+print(len(set))
+set.remove(5)
+print(set)
+set.pop()
+print(set)
+set.discard(66)
+print(set)
+set.clear()
+print(set)
+'''
+'''d={10:'vamsi',11:'eswar',12:'vinay'}
+print(d)
+for i in d:
+    print(i)
+print(d.keys())
+print(d.items())
+print(d.values())
+v={}.fromkeys(['vamsi','eswar','vinay'],'brothers')
+print(v)
+d.pop(11)
+print(d)'''
+'''str='vamsi'
+print(str[: : -1])'''
+'''str='123543677'
+lst=list(str)
+print(lst)'''
+'''def vamsi(num=123,branch='cse'):
+    print(num,branch)
+vamsi(100,'cse')
+vamsi(102)
+vamsi()
+def es(num,branch):
+    print(num,branch)
+es(123,'ece')
+es(num=123,branch='cse')'''
+
+'''def es(*a):
+    print(type(a))
+    for i in a:
+        print(i,end=" ")
+
+
+es(123,'ece')
+es(123,'cse')
+s=lambda x:x*x
+print()
+print(s(2))'''
+'''class Vamsi:
+    def getData(self):
+        self.empno=int(input(""))
+        self.empname=input("")
+        self.salary=int(input(""))
+    def putData(self):
+        print('employee number:',self.empno)
+        print('employee name :',self.empname)
+        print('employee salary:',self.salary)
+emp=Vamsi()
+emp.getData()
+emp.putData()'''
+'''class Reddy:
+    def __init__(self,rno=121,rname='vamsi'):
+        self.name=rno
+        self.age=rname
+    def output(self):
+        print(self.name,self.age)
+r=Reddy(3,'eswar')
+r.output()
+r1=Reddy()
+r1.output()'''
+'''class Myclass:
+    a=10
+    def func(self):
+        print("hello")
+print(Myclass.a)
+mc=Myclass()
+mc.func()
+print(mc.a)'''
+#palindrome
+'''n=int(input('enter'))
+s=0
+t=n
+while(n!=0):
+    r=n%10
+    s=(s*10)+r
+    n=n//10
+if t!=s:
+    print(' not palindrome')
+else:
+    print(s,'palindrome')'''
+#swapping using third variable
+'''a=2
+b=3
+temp=0
+temp=a
+a=b
+b=temp
+print(a)
+print(b)'''
+#swapping without using third variable
+'''a=2
+b=3
+a=a+b
+b=a-b
+a=a-b
+print(a)
+print(b)'''
+'''import math
+a=int(input())
+n1=math.sqrt(a)'''
+#prime numbers
+'''n=int(input())
+c=0
+for i in range(2,n):
+    print(i)
+    if n%i==0:
+        c=c+1
+        print(c)
+if c>2:
+    print('prime')
+else:
+    print('not prime')'''
+'''a='vamsi'
+lst=list(a)
+print(lst)
+lst1=tuple(lst)
+print(lst1)
+lst2=set(lst1)
+print(lst2)'''
+'''nums=[2,7,11,15]
+target=9
+s=0
+for i in nums:
+    s=s+i
+    if target==s:
+        print(target)'''
+'''s=input()[: : -1]
+print(s)'''
+#factorial program using function
+'''def fact(n):
+    if n==0:
+        return 1
+    else:
+        return (n*fact(n-1))
+f=int(input())
+s=fact(f)
+print(s)'''
+#creating a file in writing mode
+'''f=open("vamsi666.txt","w")
+f.write("the file opration in learning python")
+f.write("file completly executed")
+print("file created succesful")
+f.close()'''
+#reading a function data using with 
+'''f=open("vamsi666.txt","r")
+print(f.read())
+with open('vamsi666.txt', 'r') as f:
+	print(f.read())
+
+	f.close()'''
+#writing a data into a file in runtime
+'''f=open("vamsi667.txt","a")
+ch='y'
+while (ch=='y'):
+    vno=input("enter the vno")
+    vname=input("enter the vname")
+    vage=input("enter the vage")
+    f.writelines(vno +"\t" + vage +"\t" +vname)
+    ch=input("enter the yes or no")
+f.close()'''
+'''f=open("vamsi666.txt","r")
+f1=f.readlines()
+print(f1)
+print(type(f1))
+for p in f1:
+    print(p)'''
+'''a=16.777777
+print(round(a,-1))
+b='vamsi'
+c=12
+h=13
+print(f"my name is{b}.my age is {c}.ny heightis{h}")'''
+#calculating bmi
+'''weight=int(input("enter weight:"))
+height=float(input("enter height:"))
+bmi=weight/(height**2)
+print(bmi)
+if bmi<16.0:
+    print("Under weight")
+elif 16.0 <=bmi <=16.9:
+    print("Under weight moderate thinness")
+elif 17.0<=bmi<=18.4:
+    print("Under weight mild thinnes")
+elif 18.5<=bmi<=24.9:
+    print("Normal Rnage")
+elif 25.0<=bmi<=29.9:
+    print("Over weight pre-obess")
+elif 30.0<=bmi<=34.9:
+    print("Obese")
+elif 35.0<=bmi<=39.0:
+    print("obese class2")
+else:
+    print("obese class 3")'''
+#finding a leap year
+''''year=int(input("enter the year to be checked"))
+if year%4==0:
+    if year%100==0:
+        if year%400==0:
+            print("leap year")
+        else:
+            print("not leap year")
+    else:
+        print("not leap  year")
+else:
+    print("not leap year")'''
+    
+'''a=3
+b=2
+a,b=b,a
+print(a,b)'''
+'''a=3
+b=2
+a=a+b
+b=a-b
+a=a-b
+print(a,b)'''
+'''a=4
+b=5
+temp=a
+a=b
+b=temp
+print(a,b)'''
+'''a=5
+b=4
+a=a^b
+b=a^b
+a=a^b
+print(a,b)'''
+'''l=[25,23,45,5,6,76]
+sum=0
+n=0
+for i in l:
+    sum=sum+i
+    n=n+1
+print(sum)
+print(n)
+average=sum/n
+print(average)'''
+
+'''import numpy as np
+martix=np.array([[1,2],[2,3]])
+martix2=np.array([[1,2],[2,3]])
+print(martix*martix2)
+print(np.transpose(martix))
+print(np.diagonal(martix))'''
+#reversing a String
+'''a=input("enter the string:")[: :-1]
+print(a)
+print(a.capitalize())'''
+''''a=dict({'vamsi':1,'eswar':5})
+print(a)'''
+'''def vamsi(a,b):
+    c=a+b
+    return c
+print(vamsi(1,2))'''
+#ugly number
+'''n=int(input())
+if(n%2==0 and n%3==0 and n%5==0):
+    print(n,"it is a ugly number")
+else:
+    print(n,"it is not a ugly number")'''
+#Given a list of integers, write a Python program to convert each element of the list to a string.
+'''l=[1,2,3,4]
+string=str(l)
+print(string)
+print(type(string[0]))'''
+#Write a Python function that takes a variable as input and returns the data type of the variable as a string (e.g., “int”, “float”, “str”, “list”, etc.).
+'''def data_type(n):
+    return type(n)
+n=input()
+print(data_type(n))'''
+#Write a Python function to check if a given string is a palindrome or not.
+'''def palindrome(string):
+    rev_string=string
+    if rev_string==string:
+        print(f"{string} is a palindrome")
+    else:
+        print(f"{string}is not a palindrome")
+string=input()[: : -1]
+palindrome(string)'''
+#Write a Python function to reverse a given string using slicing.
+'''string=input()[: : -1]
+print(string)'''
+'''# Write a Python program that takes two strings as input and concatenates them into a single string without using the `+` operator
+str1=input()
+str2=input()
+str3=''.join([str1,str2])
+print(str3)'''
+#Given three variables: `a = ‘100’`, `b = 25`, and `c = ‘10.5’`, write a Python program to perform the following operations and print the results: – Convert `a` to an integer and add it to `b`. – Convert `c` to a float and subtract it from the result of the first operation. – Convert the final result to a string and concatenate it with the string ” is the answer.”
+'''a='100'
+b=25
+c='10.5'
+d=int(a)
+f=float(c)
+e=d+b
+print(e)
+g=e-f
+print(g)
+str1=str(g)
+print(type(str1))
+print(f"{str1} is the answer")'''
+#Write a Python program that takes a year as input and determines if it is a leap year or not.
+'''year=int(input("enter the year to be checked"))
+if year%4==0:
+    if year%100==0:
+        if year%400==0:
+            print("leap year")
+        else:
+            print("not leap year")
+    else:
+        print("not leap  year")
+else:
+    print("not leap year")'''
+#Write a Python program that takes a student’s percentage as input and prints their corresponding grade according to the following criteria: – 90% or above: A+ – 80-89%: A – 70-79%: B – 60-69%: C – Below 60%: Fail
+'''percentage=int(input())
+if percentage>=90:
+    print('A+')
+elif 80<=percentage<=89:
+    print('B')
+elif 60<=percentage<=69:
+    print('C')
+else:
+    print('FAIL')'''
+#Write a Python program that takes a single character as input and determines whether it is a vowel or a consonant.
+'''c=input()
+l=['a','e','i','o','u','A','E','I','O','U']
+
+if c in l:
+    print('Vowel')
+else:
+    print('constant')'''
+#Write a Python program using a for loop to calculate the sum of the first N natural numbers, where N is taken as input from the user.
+'''n=int(input())
+s=0
+for i in range(n+1):
+    s+=i
+print(s)'''
+#Write a Python program using a while loop to calculate the factorial of a given number N.
+'''def factorial(n):
+    while n==0:
+        return 1
+    else:
+        return n*factorial(n-1)
+n=int(input())
+print(factorial(n))'''
+'''def fact(n):
+    if(n==0):
+        return 1
+    else:
+        return n*fact(n-1)
+print("the factorial of a given number:",fact(100))'''
+# PERFECT SQUARE NUMBER
+'''n=int(input())
+sum=0
+for i in range(1,n):
+    if n%i==0:
+        sum+=i
+print(sum)
+if sum==n:
+    print(n,"is a perfect square")
+else:
+    print(n,"is not a perfect square")'''
+#Write a Python program using a for loop to print the multiplication table of a given number N.
+'''n=int(input())
+for i in range(1,11):
+    s=n*i
+    print(s,end=' ')'''
+#Write a Python program using a while loop to count the number of digits in a given integer N.
+'''n=int(input())
+c=0
+for i in range(n):
+    c+=1
+print(c)'''
+#Write a Python program using a while loop to calculate the sum of all even numbers between 1 and N, where N is taken as input from the user.
+'''n=int(input())
+s=0
+while n%2==0:
+    s=s+n
+print(s)'''
+#Write a Python program using a for loop to generate the Fibonacci sequence up to a given limit N.
+'''def fibo(n):
+    if n==0:
+        return 0
+    elif n==1:
+        return 1
+    else:
+        return fibo(n-1)+fibo(n-2)
+n=int(input())
+for i in range(n):
+    print(fibo(i))'''
+#Write a Python program using a while loop to calculate the sum of all even numbers between 1 and N, where N is taken as input from the user.
+'''n=int(input())
+s=0
+for i in range(n+1):
+   if i%2==0:
+      s=s+i
+print(s)'''
+#Write a Python program using nested for loops to print various patterns, such as a right-angled triangle, an inverted right-angled triangle, and so on.
+'''n=5
+for i in range(n):
+    for i in range(i,n):
+        print('*',end=' ')
+    print()
+n=5
+for i in range(n):
+    for i in range(i+1):
+        print('*',end=' ')
+    print()'''
+#Write a Python program using a while loop to check if a given number N is prime or not.
+'''n=int(input())
+c=0
+
+for i in range(1,n):
+    if n%i==0:
+        c+=1
+if(c==1):
+    print("prime number")
+else:
+    print("not prime number")'''
+#Given a list of integers, write a Python program using a for loop to find the sum, average, maximum, and minimum values in the list.
+'''l=[1,2,3,4,6,7]
+s=0
+for i in l:
+    s=s+i
+print(s/len(l))
+print(max(l))
+print(min(l))'''
+'''arr=[1,3,6,2,99,9]
+n = len(arr)
+for i in range(n):
+    for j in range(0, n-i-1):
+         if arr[j] > arr[j+1]:
+            arr[j], arr[j+1] = arr[j+1], arr[j]
+print (arr)
+#Given a list of integers, write a Python program to create a new list that contains only the even numbers from the original list.
+arr=[1,3,6,2,99,9]
+a=len(arr)
+for i in range (a):
+    if i%2==0:
+        print(arr[i],end=' ')
+#Given two lists of integers, write a Python program to create a new list that contains elements common to both lists.
+arr=[2,1,4,5,8,6]
+arr1=[1,3,6,2,99,9 ]
+for i in arr:
+    for j in arr1:
+        if i==j:
+            l=str(i)
+            a=list(l)
+            print(a,end='')
+#Write a Python program to count the occurrences of a specific element in a given list.
+l=[1,3,6,2,99,9, 3,3,3]
+for i in l:
+    a=l.count(i)
+    print(a)
+ #Given a list of integers, write a Python program to create a new list that contains the squares of the elements using list comprehension.
+numbers = [1, 2, 3, 4, 5]
+squares = [x**2 for x in numbers]
+print(squares)
+ #Given a tuple with three elements (x, y, z), write a Python program to unpack the tuple and assign the values to three variables.
+a=[12,23,2] 
+x,y,z=a
+print(x)
+print(y)
+print(z)
+#Write a Python program to sort a tuple of integers in ascending order.
+a=(2,3,1,4,5,7,9)
+b=len(a)
+l=list(a)
+l.sort()
+l1=tuple(l)
+print (l1)
+#Given a nested list containing lists of integers, write a Python program to sort the sublists based on their lengths.
+a=[[3,1],[4],[5,7,9],[3,4,5]]
+print(sorted(a,key=len))
+#Write a Python program using nested loops to print a chessboard pattern (alternating “X” and “O” characters) of size 8×8.
+for i in range(8):
+    for j in range(8):
+        if (i + j) % 2 == 0:
+            print("X", end="")
+        else:
+            print("O", end="")
+    print()
+#Number Pyramid: Write a Python program using nested loops to print a number pyramid like the following: 1 22 333 4444 55555
+for i in range(1, 6):
+    for j in range(i):
+        print(i, end="")
+    print()
+#Write a Python program to count the number of even numbers in a nested list.
+a=[[1,4,3],[5,3,4]]
+for i in a:
+    for j in i:
+        if j%2==0:
+            print(j)
+#Write a Python program that takes a list of elements as input and creates a new set containing only the unique elements from the list.
+a={1,2,2,3,3,3,3}
+b=a
+print(b)
+#Given two sets A and B, write a Python program to find their intersection and print the common elements.
+a={1,2,2,7,3,3,3}
+b={3,5 ,3,7,66,3,2}
+for i in a:
+    for j in b:
+        if i==j:
+            print(i,end=' ')
+#Given two sets A and B, write a Python program to find their union and print all the distinct elements from both sets.
+a={1,2,2,7,3,3,3}
+b={3,5 ,3,7,66,3,2}
+print(a|b)
+#Given two sets A and B, write a Python program to find the difference between set A and set B (i.e., elements present in A but not in B) and print the result.
+a={1,2,7,8,9,6,2,7,3,3,3}
+b={3,1,5 ,3,7,66,3,2}
+print(a-b)'''
+#Write a Python program using nested loops to print the multiplication table from 1 to 10.
+'''def tables(n):
+    for i in range(1,11):
+        print(n,'X',i,'=',n*i)
+    print()
+tables(2)
+tables(3)
+tables(4)
+tables(5)
+tables(6)
+tables(7)
+tables(8)
+tables(9)
+tables(10)'''
+#Write a Python program using nested loops to print the following pattern:
+
+'''*
+
+**
+
+***
+
+****
+
+*****'''
+'''n=5
+for i in range(n):
+    for i in range(i+1):
+        print('*',end='')
+    print()'''
+#FACTOORIAL PRBLM
+'''def fact(n):
+    if(n==0):
+        return 1
+    else:
+        return n*fact(n-1)
+print("the factorial of a given number:",fact(5))'''
+#TABLES
+'''n=int(input())
+for i in range(1,11):
+    s=n*i
+    print(s,end=' ')'''
+#PRIME
+'''n=int(input())
+c=0'''
+'''for i in range(1,n):
+    if n%i==0:
+        c=c+1
+if c==1:
+    print('prime')
+else:
+    print('not prime')'''
+'''#reversing a string
+a=input()[: : -1]
+print(a)
+if a==a[: : -1]:
+    print('its a palindrome')
+else:
+    print("not a palindrome")
+#sorting a string
+b=sorted(a)
+print(b)
+c=a.split('|')
+print(c)
+a='vamsi is a Good boy'
+print(a.capitalize())
+print(a.casefold())
+#print(a.center('i'))
+print(a.count(a))
+'''
+# PERFECT SQUARE NUMBER
+'''n=int(input())
+sum=0
+for i in range(1,n):
+    if n%i==0:
+        sum+=i
+print(sum)
+if sum==n:
+    print(n,"is a perfect square")
+else:
+    print(n,"is not a perfect square")'''
+'''a=int(input())
+b=int(input())
+flag=input()
+if -10<=a or b<=10 or flag==False:
+    print( True)
+elif -10<=a and b<=10 and flag==True:
+    print(True)
+else:
+    print(False)'''
+'''def friends(s_angry,j_angry):
+    if s_angry==True and j_angry==True:
+        print(True)
+    elif s_angry==False and j_angry==True: 
+        print(False)
+    else:
+        print(False)
+friends(False,False)'''
+'''str=input()
+s=str.count('cat')
+a=str.count('hat')
+if s>=1 and a>=1:
+    print(True)
+else:
+    print(False)'''
+'''n=int(input())
+for i in range(1,11):
+    s=n*i
+    print(s,end=' ')'''
+'''str=input()
+for i in range(0,len(str),2):
+    print(str[i],end='')'''
+'''n=int(input())
+for i in range(n+1):
+    print(n-i,end=' ')'''
+#Given a list of integers, write a Python program to convert each element of the list to a string.
+'''l=[1,2,3,4]
+string=str(l)
+print(string)
+print(type(string[0]))'''
+#Write a Python function that takes a variable as input and returns the data type of the variable as a string (e.g., “int”, “float”, “str”, “list”, etc.).
+'''def data_type(n):
+    return type(n)
+n=input()
+print(data_type(n))'''
+#Write a Python function to check if a given string is a palindrome or not.
+'''def palindrome(string):
+    rev_string=string
+    if rev_string==string:
+        print(f"{string} is a palindrome")
+    else:
+        print(f"{string}is not a palindrome")
+string=input()[: : -1]
+palindrome(string)'''
+#Write a Python function to reverse a given string using slicing.
+'''string=input()[: : -1]
+print(string)'''
+'''# Write a Python program that takes two strings as input and concatenates them into a single string without using the `+` operator
+str1=input()
+str2=input()
+str3=''.join([str1,str2])
+print(str3)'''
+#Given three variables: `a = ‘100’`, `b = 25`, and `c = ‘10.5’`, write a Python program to perform the following operations and print the results: – Convert `a` to an integer and add it to `b`. – Convert `c` to a float and subtract it from the result of the first operation. – Convert the final result to a string and concatenate it with the string ” is the answer.”
+'''a='100'
+b=25
+c='10.5'
+d=int(a)
+f=float(c)
+e=d+b
+print(e)
+g=e-f
+print(g)
+str1=str(g)
+print(type(str1))
+print(f"{str1} is the answer")'''
+#Write a Python program that takes a year as input and determines if it is a leap year or not.
+'''year=int(input("enter the year to be checked"))
+if year%4==0:
+    if year%100==0:
+        if year%400==0:
+            print("leap year")
+        else:
+            print("not leap year")
+    else:
+        print("not leap  year")
+else:
+    print("not leap year")'''
+#Write a Python program that takes a student’s percentage as input and prints their corresponding grade according to the following criteria: – 90% or above: A+ – 80-89%: A – 70-79%: B – 60-69%: C – Below 60%: Fail
+'''percentage=int(input())
+if percentage>=90:
+    print('A+')
+elif 80<=percentage<=89:
+    print('B')
+elif 60<=percentage<=69:
+    print('C')
+else:
+    print('FAIL')'''
+#Write a Python program that takes a single character as input and determines whether it is a vowel or a consonant.
+'''c=input()
+l=['a','e','i','o','u','A','E','I','O','U']
+
+if c in l:
+    print('Vowel')
+else:
+    print('constant')'''
+#Write a Python program using a for loop to calculate the sum of the first N natural numbers, where N is taken as input from the user.
+'''n=int(input())
+s=0
+for i in range(n+1):
+    s+=i
+print(s)'''
+#Write a program which can compute the factorial of a given numbers.
+#The results should be printed in a comma-separated sequence on a single line.
+#uppose the following input is supplied to the program:
+'''def fact(x):
+    if x==0:
+        return 1
+    else:
+        return x*fact(x-1)
+print(fact(4))'''
+#With a given integral number n, write a program to generate a dictionary that contains (i, i*i) such that is an integral number between 1 and n (both included). and then the program should print the dictionary.
+'''Suppose the following input is supplied to the program:
+8
+Then, the output should be:
+{1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64}
+
+n=8
+d=dict()
+for i in range(1,n+1):
+    d[i]=i*i
+ 
+print(d)
+'''
+
+#Write a program which accepts a sequence of comma-separated numbers from console and generate a list and a tuple which contains every number.
+'''Suppose the following input is supplied to the program:
+34,67,55,33,12,98
+Then, the output should be:
+['34', '67', '55', '33', '12', '98']
+('34', '67', '55', '33', '12', '98')
+s=input()
+b=s.split(',')
+print(b)
+l=tuple(b)
+print(l)'''
+#Write a program that accepts a comma separated sequence of words as input and prints the words in a comma-separated sequence after sorting them alphabetically.
+'''Suppose the following input is supplied to the program:
+without,hello,bag,world
+Then, the output should be:
+bag,hello,without,world
+
+c=input().split(',')
+d=sorted(c)
+print(d)'''
+#Write a program that accepts sequence of lines as input and prints the lines after making all characters in the sentence capitalized.
+'''Suppose the following input is supplied to the program:
+Hello world
+Practice makes perfect
+Then, the output should be:
+HELLO WORLD
+PRACTICE MAKES PERFECT
+l=[]
+while True:
+    s=input()
+    if s:
+        l.append(s.upper())
+    else:
+        break
+for sentence in l:
+    print(sentence)'''
+#Write a program that accepts a sentence and calculate the number of letters and digits.
+'''Suppose the following input is supplied to the program:
+hello world! 123
+Then, the output should be:
+LETTERS 10
+DIGITS 3
+r=input()
+c=0
+s=0
+for i in r:
+    for j in i:
+        if j.isdigit():
+            c=c+1
+        elif j.isalnum():
+            s=s+1
+print(f'ALPAHBETS{s} DIGITS{c}')
+
+'''
+#Write a program that accepts a sentence and calculate the number of upper case letters and lower case letters.
+'''Suppose the following input is supplied to the program:
+Hello world!
+Then, the output should be:
+UPPER CASE 1
+LOWER CASE 9
+r=input()
+c=0
+s=0
+for i in r:
+    for j in i:
+        if j.isupper():
+            c=c+1
+        elif j.islower():
+            s=s+1
+print(f'LOWER{s} UPPER{c}')'''
+#Write a program that computes the value of a+aa+aaa+aaaa with a given digit as the value of a.
+'''Suppose the following input is supplied to the program:
+9
+Then, the output should be:
+11106
+a = input()
+n1 = int( "%s" % a )
+n2 = int( "%s%s" % (a,a) )
+n3 = int( "%s%s%s" % (a,a,a) )
+n4 = int( "%s%s%s%s" % (a,a,a,a) )
+print (n1+n2+n3+n4)'''
+#Use a list comprehension to square each odd number in a list. The list is input by a sequence of comma-separated numbers.
+'''Suppose the following input is supplied to the program:
+[1,2,3,4,5,6,7,8,9]
+Then, the output should be:
+[1,3,5,7,9]
+l=[1,2,3,4,5,6,7,8]
+m=[]
+s=len(l)
+for i in range(s):
+    if i%2==0:
+        m.append(l[i])
+print(m)
+'''
+#Prime numbers using root method
+'''a = 2
+c = 0
+b = int(a**0.5)
+
+# The loop should start from 2, as 1 is a divisor of every number
+for i in range(2, b + 1):
+    if a % i == 0:
+        
+        c += 1
+if c == 0:
+    print("it is a prime")
+else:
+    print("it is not prime") '''
+#Prime number using Floor divison
+'''a = 97
+c = 0
+for i in range(2, a // 2 + 1):
+    if a % i == 0:
+        c = c + 1
+if c == 0:  # Corrected condition
+    print("it is a prime")
+else:
+    print("it is not prime")'''
+#counting lenght of the integer numbers
+'''a=167677777777
+c=0
+while a!=0:
+    rem=a%10
+    c=c+1
+    a=a//10
+print(c)'''
+#to find range of prime numbers in a list
+'''n=97 
+for j in range(2,n+1):
+    c=0
+    for i in range(2,int(j**0.5)+1):
+        if j%i==0:
+            c=c+1
+            break
+    if c==0:
+        print("prime numbers are",j)'''
+#to find prime numbers in a list and print the strings
+'''l=[1,2,3,4,'vamsi','eswar']
+for i in l:
+    if type(i)==int:
+        if i>1:
+            c=0
+            for j in range(2,int(i**0.5)+1):
+                if i%j==0:
+                    c=c+1
+                    break
+            if c==0:
+                print("prime numbers are:",i)
+       
+    elif type(i)==str:
+        print(i)'''
+#to find the factors and prime factors of the given range
+'''n=12
+for i in range(2,n+1):
+    if n%i==0:
+        c=0
+        for j in range(2,int(i**0.5)+1):
+            if i%j==0:
+               c=c+1
+        if c==0:
+            print(i)''' 
+#Type Conversion: Given a list of integers, write a Python program to convert each element of the list to a string.
+'''l=[1,2,3,41,22,33]
+res=[]
+for i in l:
+    res.append(str(i))
+print(res)'''
+#You are given a string and your task is to swap cases. In other words, convert all lowercase letters to uppercase letters and vice versa.
+
+'''For Example:
+
+Www.HackerRank.com → wWW.hACKERrANK.COM
+Pythonist 2 → pYTHONIST 2  
+s="Www.HackerRank.com "
+res=[]
+for i in s:
+    if i.islower():
+        print(i.upper(),end='')
+    else:
+        print(i.lower(),end='')'''
+#You are given a string. Split the string on a " " (space) delimiter and join using a - hyphen.
+'''l="vamsi is a good boy"
+s=l.split(" ")
+print(s)
+a="-".join(s)
+print(a)'''
+
+#You are given an immutable string, and you want to make changes to it.
+
+'''l="vamsi"
+s=list(l)
+s[3]='v'
+print("".join(s))'''
+#18. Python program to print the numbers from a given number n till 0 using recursion
+'''def recur(n):
+    while n!=0:
+        print(n)
+        n=n-1
+recur(5)'''
+#28. Python program to implement matrix addition
+'''x=[[1,2,3],[3,4,5],[5,6,7]]
+y=[[1,2,3],[3,4,5],[5,6,7]]
+res=[[0,0,0],[0,0,0],[0,0,0]]
+for i in range(len(x)):
+    for j in range(len(y)):
+        res[i][j]=x[i][j]*y[i][j]
+print(res)
+for k in res:
+    print(k)'''
+#program to print reverse order of list
+'''l=[1,2,3,4,5]
+for i in range(len(l)-1,-1,-1):
+    print(list(l[i]))'''
+#Python program to display the given integer in a reverse manner
+'''number = int(input("Enter a positive integer: "))
+rev = 0
+while(number!=0):
+    digit = number%10
+    rev = (rev*10)+digit
+    number = number//10
+print(rev)
+'''
+#Python program to display all integers within the range 100-200 whose sum of digits is an even number
+'''for i in range(100,200):
+    num = i
+    sum = 0
+    while(num!=0):
+        digit = num%10
+        sum = sum + digit
+        num = num//10
+    if(sum%2==0):
+        print(i)'''
+#Python program to print the numbers from a given number n till 0
+'''n=int(input())
+for i in range(n):
+    n=n-1
+    print(n)'''
+#Python program to find the largest number in a list without using built-in functions
+'''l=[1,2,3,6,44,8,2,3,9]
+big=l[0]
+for i in range(len(l)):
+    if l[i]>big:
+        big=l[i]
+print(big)'''
+#To sort a list without using built-in functions and methods
+'''l=[3,2,1,4,5,6,7,8,1,1]
+for i in range(len(l)):
+    for j in range(len(l)-1):
+        if l[j+1]<l[j]:
+            l[j+1],l[j]=l[j],l[j+1]
+print(l)
+'''
+#sum of digits of a given number
+'''s=1234
+sum1=0
+while s!=0:
+    j=s%10
+    sum1=sum1+j
+    s=s//10
+print(sum1)
+'''
+#finfing Niven Number
+'''s = 12  # Or get input: s = int(input("Enter a number: "))
+
+original_s = s  # Store the original value
+
+sum1 = 0
+while s != 0:
+    j = s % 10
+    sum1 = sum1 + j
+    s = s // 10
+
+if original_s % sum1 == 0:  # Use original_s HERE, after the loop
+    print('It is a Niven Number')
+else:
+    print('It is not a Niven Number')'''
+#IF POWERS OF 2 WILL OCCUR IN A LIST THEN WE HAVE TO RETURN 1 ELSE 0
+'''l=[1,2,3,4,6,7,8,12,14,16,111]
+res=[]
+power=[]
+for n in range(len(l)):
+    power.append(2**n)
+for i in l:
+        
+    if i in power:
+        res.append(1)
+    else:
+        res.append(0)
+print(res)
+        '''
+#INPUTING A LIST AT RUN TIME
+#METHOD1
+'''l=input()
+list=[int(x) for x in l.split(",")]
+print(list)
+print(type(list))'''
+#METHOD 2
+'''l=5
+list=[]
+for i in range(l):
+    s=int(input())
+    list.append(s)
+    
+print(list)
+print(type(list))'''
+
+
+
+
+#performing arithmetic operations 
+'''def add(a,b):
+    return a+b
+def sub(a,b):
+    return a-b
+def div(a,b):
+    return a/b
+def mul(a,b):
+    return a*b
+def floor(a,b):
+    return a//b
+print("The follwing are the numbers that you have to choose\n1.add\n2.sub\n3.div\n4.mul\n5.floor")
+x=int(input("enter the number that you want between(1-5):"))
+if x <=5:
+    a=int(input("enter the first value:"))
+    b=int(input("enter the second value:"))
+    match(x):
+        case 1:
+            print("res=",add(a,b))
+        case 2:
+            print("res=",sub(a,b))
+        case 3:
+            print("res=",div(a,b))
+        case 4:
+            print("res=",mul(a,b))
+        case 3:
+            print("res=",floor(a,b))
+else:
+    print("you entered out of given range of number")'''
+
+
+
+
+#ARMSTRONG NUMBER
+'''n=407
+original=n
+l=len(str(n))
+sum=0
+while n!=0:
+    r=n%10
+    sum=sum+r**l
+    n=n//10
+if sum==original:
+    print("it is a armstrong number")
+else:
+    print("it is not a armstrong number")
+'''
+
+
+
+
+#You are given an array arr[], the task is to return a list elements of arr in alternate order (starting from index 0).
+'''l=[1,2,34,5,6,7,8,9,10]
+res=[]
+for i in range(len(l)):
+    if i%2==0:
+        res.append(l[i])
+print(res)
+'''
+
+
+
+#Given an array, arr of n integers, and an integer element x, find whether element x is present in the array. Return the index of the first occurrence of x in the array, or -1 if it doesn't exist.
+'''def list(l,t):
+    for i in range(len(l)):
+        if l[i]==t:
+            return i
+    return -1
+        
+l1=[1,2,3,4,5,6]
+t1=99
+print(list(l1,t1))
+    
+'''
+
+
+
+#Given an array arr[]. The task is to find the largest element and return it.
+'''l=[1,2,3,4,5,5666,777777]
+lar=l[0]
+for i in l:
+    if i>lar:
+        lar=i
+print(lar)'''
+
+
+
+
+######You are given an array of integers arr[]. Your task is to reverse the given array.
+'''l=[1,2,3,4,5,5666,777777]
+
+i=len(l)-1
+while i>=0:
+    print(l[i])
+    i-=1
+l=[1,2,3,4,5,5666,777777]
+
+for i in range(len(l)-1,-1,-1):
+    print(l[i])
+'''
+
+
+
+
+
+#BINARY SEARCH
+'''def binary_search(arr, target):
+    low = 0
+    high = len(arr) - 1
+
+    while low <= high:
+        mid = (low + high) // 2  # Integer division to get the middle index
+        if arr[mid] == target:
+            return mid  # Element found
+        elif arr[mid] < target:
+            low = mid + 1  # Search in the right half
+        else:
+            high = mid - 1  # Search in the left half
+    return -1  # Element not found
+
+# Important: The list MUST be sorted for binary search to work correctly
+my_list = [5, 8, 10, 12, 20]  # Sorted list
+target_element = 12
+result = binary_search(my_list, target_element)
+
+if result != -1:
+    print(f"Element {target_element} found at index {result}")
+else:
+    print(f"Element {target_element} not found in the list")
+
+
+'''
+
+
+
+#LINEAR SEARCH
+'''def linear_search(arr, target):
+    for i in range(len(arr)):
+        if arr[i] == target:
+            return i  # Return the index if found
+    return -1  # Return -1 if not found
+
+my_list = [10, 5, 20, 8, 12]
+target_element = 20
+result = linear_search(my_list, target_element)
+
+if result != -1:
+    print(f"Element {target_element} found at index {result}")
+else:
+    print(f"Element {target_element} not found in the list")
+'''
+
+
+
+
+###FINDING THE SECOND LARGEST
+'''l=[1,2,3,4,5,6,7,9]
+lar=l[0]
+sec=0
+for i in l:
+    if i>lar:
+        sec=lar
+        lar=i
+    elif i>sec and i!=0:
+        sec=i
+print(sec)'''
+
+
+
+
+#finding the no of zeroes in a given array
+'''l=[1,1,0,0,1,0,1,0]
+c=0
+for i in l:
+    if i==0:
+        c+=1
+print(f"no of zeroes in a given array {c}")'''
+
+
+
+
+
+#SELECTION SORT
+'''l=[1,2,3,6,5,4,9]
+n=len(l)
+for i in range(n):
+    min=i
+    for j in range(i+1,n):
+        if l[j]>l[min]:
+            min=j
+        l[j],l[min]=l[min],l[j]
+print(l)'''
+
+
+
+#given an array ,check whether it is sorted or not if it is sorted return true eles false
+'''def sorted_array(arr):
+    s=sorted(arr)
+    if arr==s:
+        return True
+    return False
+arr1=[1,2,3,1]
+print(sorted_array(arr1))'''
+
+
+#given an array consisiting of zeros and ones segarte the 0's to left of the array and 1's to the right of array
+'''def segregate(arr):
+    res=[]
+    for i in arr:
+        if i==0:
+            res.append(i)
+    for j in arr:
+        if j==1:
+            res.append(j)
+    return res
+
+arr1=[1,0,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0]
+print(segregate(arr1))'''
+
+
+#INSERSECTION OF TWO SORTED ARRAYS
+'''a=[1,2,3,4,5]
+b=[1,2,3,6,7]
+a1=set(a).intersection(set(b))
+print(a1)
+
+
+a=[1,2,3,4,5]
+b=[1,2,3,6,7]
+res=[]
+for i in a:
+    if i in b:
+       res.append(i)
+print(res)'''
+
+
+
+
+#printing numbers from n to 0
+'''for i in range(12,-1,-1):
+    print(i)
+'''
+
+
+
+#REVERSING A STRING USING A FUNCTION
+'''def reverse_str(str,rstr):
+    length=len(str)
+    while length>0:
+        rstr+=str[length-1]
+        length=length-1
+    return rstr
+print(reverse_str('12345678',''))
+'''
+
+
+
+
+#MAX OF THREE USING FUNCTIONS
+'''def max_of_three(a,b,c):
+    if a>b and a>c:
+        return a
+    elif b>c and b>a:
+        return b
+    else:
+        return c
+print(max_of_three(12,14,-19))'''
+
+
+
+#PRINTING UNIQUE ELEMENTS IN A LIST USING FUNCTION
+'''def unique(l):
+    res=[]
+    for i in l:
+        if i not in res:
+            res.append(i)
+    return res
+
+res1=[1,2,3,4,51,4,5,6,76,777,777,99]
+print(unique(res1))'''
+
+
+
+#PRINTING UPPER CASE AND LOWER CASE LETTERS USING FUNCTION
+'''def case_checking(str):
+    l=0
+    u=0
+    for i in str:
+        if i.islower():
+            l=l+1
+        else:
+            u=u+1
+    print(f"upper case letters :{u} and lower case letters:{l}")
+
+case_checking("Vamsi")
+'''
+
+
+
+#CHECKING THE PERFECT NUMBER USING FUNCTION
+'''def perfect(n):
+    s=0
+    for i in range(1,n):
+        if n%i==0:
+           s=s+i
+    if s==n:
+        print("it is a perfrct number")
+    else:
+        print("not")
+perfect(123)
+'''
+
+
+#CHECKING WHETHER IT IS A PALINDROME OR NOT
+'''def reverse_str(str,rstr):
+    length=len(str)
+    while length>0:
+        rstr+=str[length-1]
+        length=length-1
+    if rstr==str:
+        print("it is palindrome")
+    else:
+        print("it is not a palindrome")
+
+reverse_str('madam','')'''
+
+
+
+#TO PRINT THE SQUARES USING A FUNCTION WITHIN A GIVEN RANGE
+'''def squares(n1,n2):
+    res=[]
+    for i in range(n1,n2):
+        res.append(i*i)
+    print(res)
+squares(1,21)'''
+
+
+
+#finding a even number using for
+'''a=int(input())
+for i in range(2,a,2):
+    print(i)'''
+
+
+#finding a even number using for
+'''a=int(input())
+for i in range(1,a,2):
+    print(i)'''
+   
+
+   #printing 1 to n using for loop
+'''n=int(input("enter the number:"))
+for i in range(1,n):
+    print(i)'''
+
+
+
+#printing n to 0 using while looop
+'''n=int(input("enter the number:"))
+while n>=0:
+    print(n)
+    n-=1'''
+
+
+
+
+
+#summing single digit and two digit numbers in the list
+'''l=[1,3,1,2,44,55]
+sum=0
+for i in l:
+   
+    if i<10:
+        sum=sum+i
+print(sum)
+l=[1,3,1,2,44,55,6767676]
+sum=0
+for i in l:
+   
+    if i<100 and i>10:
+        sum=sum+i
+print(sum)'''
+
+
+
+
+#printing only lower case letters in given string
+'''s="esWar"
+for i in s:
+    if 'a'<=i<='z':
+        print(i)
+        
+        
+    if ord(i)>96 and ord(i)<=122:
+        print(i)'''
+
+
+
+#printing n to 0 using for loop
+'''n=int(input("Enter the number:"))
+for i in range(n,-1,-1):
+    print(i)'''
+
+
+
+#printing 1 to n using while loop
+'''n=int(input("Enter the number:" ))
+i=1
+while i<=n:
+    print(i)
+    i+=1'''
+
+
+
+#Printing even number if index number and next index position is even
+'''l=[1,2,3,4,2,1]
+for i in range(len(l)-1):
+   even=i+l[i+1]
+   if (even)%2==0:
+    print(even)'''
+    
+
+
+
+
+#printing asciiii value
+'''print(ord("Z"))
+print(ord("A"))
+print(ord("a"))
+print(ord("z"))
+print(ord("#"))'''
+
+
+
+
+
+
+
+#finding the LEAP Year
+"""def is_leap(year):
+    leap = False
+    
+    # Write your logic here
+    if year%4 == 0:            #Here we are checking if the year is normal year
+        leap = True
+        if year%100 == 0:        #Here we are checking if the year is a century year      
+            if year%400 == 0:
+                leap = True
+            else:
+                leap = False
+    return leap
+
+year = int(input())
+print(is_leap(year))"""
